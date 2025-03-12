@@ -2,34 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anthony's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Anthony, and I'm currently studying software engineering at SNHU</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <h1 id="typing-text"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Anthony, and I'm currently studying software engineering at SNHU</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="project1.jpeg" alt="Project 1">
+                    <p>Project 1: Description</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpeg" alt="Project 2">
+                    <p>Project 2: Description</p>
+                </div>
+            </div>
+        </section>
+        <button id="topBtn">↑</button>
+    </div>
     <footer>
-        <p>&copy; 2025 Anthony</p>
+        <div>Anthony</div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
