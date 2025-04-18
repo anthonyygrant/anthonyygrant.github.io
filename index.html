@@ -9,10 +9,18 @@
 <body>
   <header>
     <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact Me</a>
-    </nav>
+        <div class="nav-center">
+          <a href="#about">About Me</a>
+          <a href="#capstone">Capstone</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="theme-checkbox">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </nav>      
   </header>
 
   <main>
@@ -27,13 +35,53 @@
       <p>Hello! I’m Sarah. This portfolio showcases the work I’ve completed as part of my capstone project. My goal is to demonstrate my skills, experience, and interests in a way that resonates with potential employers.</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Project 1:</strong> Description of project 1</li>
-        <li><strong>Project 2:</strong> Description of project 2</li>
-      </ul>
-    </section>
+    <section id="capstone">
+        <h2>Capstone</h2>
+        <div class="capstone-wrapper">
+      
+          <div class="capstone">
+            <div class="capstone-media">
+              <iframe src="https://youtube.com/embed/dIS7qzM-fOQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="capstone-text">
+              <h3>Initial Code Review</h3>
+              <p>For my capstone I chose to utilize a codebase from a prior course. This video showcases that initial review of the code, and lays out what my plan is for enhancing it.</p>
+            </div>
+          </div>
+      
+          <div class="capstone">
+            <div class="capstone-text">
+              <h3>Enhancement One</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum turpis eu cursus.</p>
+            </div>
+            <div class="capstone-media">
+              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+      
+          <div class="capstone">
+            <div class="capstone-text">
+              <h3>Enhancement Two</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum turpis eu cursus.</p>
+            </div>
+            <div class="capstone-media">
+              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+      
+          <div class="capstone">
+            <div class="capstone-text">
+              <h3>Enhancement Three</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum turpis eu cursus.</p>
+            </div>
+            <div class="capstone-media">
+              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
 
     <section id="contact">
       <h2>Contact Me</h2>
@@ -43,6 +91,9 @@
 
     <button id="back-to-top" onclick="scrollToHome()">↑ Back to Top</button>
   </main>
+
+  <!-- Smooth theme transition overlay -->
+  <div id="theme-fade-overlay"></div>
 
   <script src="src/js/script.js"></script>
 </body>
