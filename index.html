@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anthony's Portfolio</title>
-    <link rel="stylesheet" href="src/style/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capstone Portfolio</title>
+  <link rel="stylesheet" href="/src/style/styles.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-container">
-                <h1 id="typing-text"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm Anthony, and I'm currently studying software engineering at SNHU</p>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-container">
-                <div class="project">
-                    <img src="src/img/project1.jpeg" alt="Project 1">
-                    <p>Project 1: Description</p>
-                </div>
-                <div class="project">
-                    <img src="src/img/project2.jpeg" alt="Project 2">
-                    <p>Project 2: Description</p>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <label for="message">Your Message:</label>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-        <button id="topBtn">↑</button>
-    </div>
-    <footer>
-        <div>Anthony</div>
-    </footer>
-<script src="src/js/script.js"></script>
+  <header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1 id="title">
+        <span id="typed-text"></span><span id="cursor">|</span>
+      </h1>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Sarah. This portfolio showcases the work I’ve completed as part of my capstone project. My goal is to demonstrate my skills, experience, and interests in a way that resonates with potential employers.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project 1:</strong> Description of project 1</li>
+        <li><strong>Project 2:</strong> Description of project 2</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: sarah@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToHome()">↑ Back to Top</button>
+  </main>
+
+  <script src="/src/js/script.js"></script>
 </body>
 </html>

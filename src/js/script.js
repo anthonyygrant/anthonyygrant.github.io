@@ -1,32 +1,50 @@
-const text = "Welcome to My Portfolio!";
-const topBtn = document.getElementById("topBtn");
-let index = 0;
-
-function typeEffect() {
-    document.getElementById("typing-text").innerText = text.slice(0, index);
-    index++;
-
-    if (index <= text.length) {
-        setTimeout(typeEffect, 100);
+document.addEventListener("DOMContentLoaded", () => {
+    const text = "Welcome to My Capstone Portfolio";
+    const typedText = document.getElementById("typed-text");
+    const cursor = document.getElementById("cursor");
+    const backToTopButton = document.getElementById("back-to-top");
+    let i = 0;
+    const speed = 100;
+  
+    function typeChar() {
+      if (i < text.length) {
+        typedText.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeChar, speed);
+      } else {
+        setTimeout(() => {
+          cursor.style.animation = "fade-caret 1s ease-out forwards";
+        }, 1500);
+      }
     }
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
-
-window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        topBtn.style.display = "block";
-    } else {
-        topBtn.style.display = "none";
+  
+    // Scroll to home and remove hash from URL
+    window.scrollToHome = () => {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+      history.pushState(null, null, window.location.pathname);
+    };
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            backToTopButton.classList.remove("show");
+          } else {
+            backToTopButton.classList.add("show");
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.6,
+      }
+    );
+  
+    const homeSection = document.getElementById("home");
+    if (homeSection) {
+      observer.observe(homeSection);
     }
-};
-
-topBtn.addEventListener("click", function () {
-    window.scrollTop({ top: 0, behavior: "smooth" });
-});
-
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert("Your message has been sent! I'll get back to you soon.")
-
-});
+  
+    typeChar();
+  });
+  
