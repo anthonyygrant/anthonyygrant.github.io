@@ -9,18 +9,18 @@
 <body>
   <header>
     <nav>
-        <div class="nav-center">
-          <a href="#about">About Me</a>
-          <a href="#capstone">Capstone</a>
-          <a href="#contact">Contact Me</a>
-        </div>
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="theme-checkbox">
-            <input type="checkbox" id="theme-checkbox" />
-            <span class="slider round"></span>
-          </label>
-        </div>
-      </nav>      
+      <div class="nav-center">
+        <a href="#capstone">Capstone</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="theme-checkbox">
+          <input type="checkbox" id="theme-checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -28,73 +28,94 @@
       <h1 id="title">
         <span id="typed-text"></span><span id="cursor">|</span>
       </h1>
+      <a href="#capstone" class="arrow-link">
+        <div id="down-arrow" class="arrow hidden">↓</div>
+      </a>
+    </section>
+
+    <section id="capstone">
+      <h2>Capstone</h2>
+
+      <!-- Initial Code Review (separated from wrapper) -->
+      <div class="capstone initial-review">
+        <div class="capstone-text">
+          <h3>Initial Code Review</h3>
+          <p>
+            For my capstone I chose to utilize a codebase from a prior course. This video showcases that initial review of the code, and lays out what my plan is for enhancing it.
+          </p>
+        </div>
+        <div class="capstone-media center-video">
+          <iframe src="https://youtube.com/embed/dIS7qzM-fOQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="centered-link">
+            Check out the code for this yourself! <a href="https://github.com/anthonyygrant/cs499-ePortfolio" target="_blank">GitHub Repository</a>
+          </p>
+      </div>
+
+      <!-- Enhancement Blocks -->
+      <div class="capstone-wrapper">
+        <!-- Enhancement One -->
+        <div class="capstone">
+          <div class="capstone-text">
+            <h3>Enhancement One</h3>
+            <p>This enhancement focuses on a web-based login page that was recently modified to improve access control within a full-stack project. Originally, the admin site could be viewed without logging in, but now the login page is required for all admin site access. This change strengthens security by ensuring that only authenticated admin users can access sensitive administrative content. The enhancement demonstrates key skills such as HTML form development, JavaScript for client-side storage, and integration with Angular services.</p>
+            <p>The enhancement aligns with course outcomes related to client-side scripting, debugging, and framework integration. Throughout the process, challenges such as managing session data across site navigation and ensuring proper logout behavior were addressed through testing and troubleshooting. In addition to improving site security, this artifact lays important groundwork for future features, including user session handling for the standard user-facing site.</p>
+          </div>
+          <div class="capstone-media center-video">
+            <iframe src="https://youtube.com/embed/9fDe0Rtfusc" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Enhancement Two -->
+        <div class="capstone">
+          <div class="capstone-text">
+            <h3>Enhancement Two</h3>
+            <p>This enhancement focuses on refining the user registration feature and route protection system within a web application. Initially, registration was only accessible via Postman, but it has since been integrated with the login page through a user-friendly link. The route protection system uses decision-making algorithms to determine user access rights, ensuring proper control of restricted areas. These improvements required updates to Angular routing, HTML structure, and TypeScript logic to ensure seamless frontend-backend integration.</p>
+            <p>This artifact was included to showcase the implementation of foundational web development practices such as routing, API interaction, and access control. Enhancing this feature strengthened skills in debugging, algorithmic thinking, and error analysis. Throughout the process, challenges included isolating routing issues and avoiding rushed code errors. This enhancement supports course outcomes related to web development and demonstrates the importance of thoughtful coding and troubleshooting practices.</p>
+          </div>
+          <div class="capstone-media center-video">
+            <iframe src="https://www.youtube.com/embed/LDKkX8EtVvQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Enhancement Three -->
+        <div class="capstone">
+          <div class="capstone-text">
+            <h3>Enhancement Three</h3>
+            <p>The third enhancement highlights the “trips” section of the Travlr site, which serves as the main interface for users to explore available travel packages. While a static structure previously existed, the major update was the implementation of real-time updates—now any changes made through the admin panel (such as additions, edits, or deletions) are instantly visible to users without needing to refresh the page. This improvement was achieved through the integration of WebSockets, allowing seamless synchronization between the backend database and the frontend display.</p>
+            <p>This enhancement was chosen for its strong alignment with modern web application practices and its central role in user experience. It demonstrates advanced skills in asynchronous communication, real-time data handling, and database integration. The update not only met course outcomes related to innovative database-driven solutions, but also deepened my understanding of building responsive, dynamic web interfaces. Challenges included ensuring accurate, consistent data flow from database to screen, reinforcing the importance of efficient backend-to-frontend communication in creating interactive and user-centered applications.</p>
+          </div>
+          <div class="capstone-media center-video">
+            <iframe src="https://www.youtube.com/embed/mfEpJGqIwNc" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I’m Sarah. This portfolio showcases the work I’ve completed as part of my capstone project. My goal is to demonstrate my skills, experience, and interests in a way that resonates with potential employers.</p>
-    </section>
-
-    <section id="capstone">
-        <h2>Capstone</h2>
-        <div class="capstone-wrapper">
-      
-          <div class="capstone">
-            <div class="capstone-media">
-              <iframe src="https://youtube.com/embed/dIS7qzM-fOQ" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="capstone-text">
-              <h3>Initial Code Review</h3>
-              <p>For my capstone I chose to utilize a codebase from a prior course. This video showcases that initial review of the code, and lays out what my plan is for enhancing it.</p>
-            </div>
-          </div>
-      
-          <div class="capstone">
-            <div class="capstone-text">
-              <h3>Enhancement One</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum turpis eu cursus.</p>
-            </div>
-            <div class="capstone-media">
-              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-      
-          <div class="capstone">
-            <div class="capstone-text">
-              <h3>Enhancement Two</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum turpis eu cursus.</p>
-            </div>
-            <div class="capstone-media">
-              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-      
-          <div class="capstone">
-            <div class="capstone-text">
-              <h3>Enhancement Three</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum turpis eu cursus.</p>
-            </div>
-            <div class="capstone-media">
-              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-      
+      <div class="section-content about-layout">
+        <div class="about-text">
+            <p>Hi, I’m Anthony — a Systems Administrator based in New Hampshire, where I live with my wife and our two cats, Moomba and Reggie. I’m currently completing my <strong>Bachelor of Science in Computer Science</strong> with a concentration in <strong>Software Engineering</strong> at Southern New Hampshire University, building on a <strong>B.S. in Biblical & Theological Studies</strong> and an <strong>A.A. in Information Systems</strong> from Liberty University. I’m on track to graduate in April and looking forward to a well-earned break after that milestone!</p>
+            <p>By day, I work for a New Hampshire-based company that specializes in <strong>learning management systems and compliance training platforms</strong>. While my role is rooted in IT, I frequently collaborate with our development team and work with tools like <strong>Visual Studio</strong>, <strong>SQL Server Management Studio</strong>, <strong>Jenkins</strong>, and more. This hands-on exposure, combined with my academic background, has given me a solid foundation in <strong>full-stack development</strong>.</p>
+            <p>I’m passionate about bridging the gap between system infrastructure and software engineering. My goal is to continually grow my understanding of modern development frameworks and better support the engineers I work alongside. This portfolio highlights my progress, showcases recent projects, and serves as a reflection of my journey through software development.</p>
         </div>
-      </section>
-      
+        <img src="/src/img/Me.jpg" alt="Photo of Myself" class="about-image" />
+        </div>
+    </section>
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>Email: sarah@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+      <div class="section-content">
+        <p>Email: anthonyygrant@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anthony-grant-8576b1197/" target="_blank">Click Here</a></p>
+      </div>
     </section>
 
     <button id="back-to-top" onclick="scrollToHome()">↑ Back to Top</button>
   </main>
 
-  <!-- Smooth theme transition overlay -->
   <div id="theme-fade-overlay"></div>
-
   <script src="src/js/script.js"></script>
 </body>
 </html>
